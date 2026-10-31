@@ -1,0 +1,83 @@
+/* ---------- "Original" skin ----------
+ * A reconstruction of how cynbit.in behaves today, used only for before/after comparison.
+ * Built from the screenshots supplied with the assessment and from the live page structure
+ * (no source code was available). It is NOT Cynbit's code. Everything here is scoped to
+ * html[data-view='original'] so the improved view carries none of it.
+ */
+
+/* --- Navigation: no active state, no breadcrumbs --- */
+[data-view='original'] { --crumb-h: 0px; }
+[data-view='original'] .breadcrumbs { display: none; }
+[data-view='original'] .nav-link[aria-current='page'],
+[data-view='original'] .nav-group[data-active='true'] > .nav-trigger { color: var(--ink-2); background: none; }
+[data-view='original'] .nav-link[aria-current='page']::after,
+[data-view='original'] .nav-group[data-active='true'] > .nav-trigger::after { display: none; }
+[data-view='original'] .nav-link[aria-current='page']:hover,
+[data-view='original'] .nav-group[data-active='true'] > .nav-trigger:hover { color: var(--teal-900); background: var(--surface-3); }
+[data-view='original'] .nav-menu__link[aria-current='page'],
+[data-view='original'] .m-group a[aria-current='page'],
+[data-view='original'] .m-link[aria-current='page'] { background: none; color: var(--ink-2); font-weight: 600; box-shadow: none; }
+[data-view='original'] .m-group[data-active='true'] summary { color: inherit; }
+[data-view='original'] .bottom-bar a[aria-current='page'] { color: var(--ink-3); }
+[data-view='original'] .bottom-bar a[aria-current='page']::before { display: none; }
+[data-view='original'] .footer__col a[aria-current='page'],
+[data-view='original'] .footer__legal a[aria-current='page'] { color: var(--ink-2); font-weight: 400; }
+
+/* --- Learning paths: bento grid with uneven spans, heights and surfaces --- */
+[data-view='original'] .path-grid { grid-template-columns: 1fr; grid-auto-rows: auto; align-items: start; gap: 24px; }
+[data-view='original'] .path-card article { min-height: 210px; padding: 36px 40px; gap: 36px; }
+[data-view='original'] .path-card__icon { width: 28px; height: 28px; background: none; border-radius: 0; color: var(--teal-900); justify-content: flex-start; }
+[data-view='original'] .path-card__top { align-items: flex-start; }
+[data-view='original'] .path-card__title { font-size: 1.9rem; line-height: 1.1; letter-spacing: -0.05em; }
+[data-view='original'] .path-card:not([data-n='1']) .path-card__index,
+[data-view='original'] .path-card:not([data-n='3']) .path-card__tag,
+[data-view='original'] .path-card:not([data-source='live']) .path-card__desc { display: none; }
+[data-view='original'] .path-card[data-n='3'] .path-card__tag { align-self: flex-start; padding: 3px 10px; border-radius: 6px; background: var(--brown-100); color: var(--brown); letter-spacing: 0.12em; font-size: 0.6rem; }
+[data-view='original'] .path-card:not([data-original='white']) article::after { display: none; }
+
+[data-view='original'] .path-card[data-original='white'] article { background: #fff; border-radius: 40px; box-shadow: var(--shadow-sm); }
+[data-view='original'] .path-card[data-original='grey'] article { background: #e8ecec; border-radius: 40px; box-shadow: var(--shadow-sm); }
+[data-view='original'] .path-card[data-original='brown'] article { background: #dfe2e2; border: 1px solid var(--brown); border-top: 10px solid var(--brown); border-radius: 44px; min-height: 285px; box-shadow: none; }
+[data-view='original'] .path-card[data-original='brown'] .path-card__icon { color: var(--brown); }
+[data-view='original'] .path-card[data-original='teal'] article { background: #007b83; color: #fff; border-radius: 64px; min-height: 277px; box-shadow: var(--shadow-md); }
+[data-view='original'] .path-card[data-original='teal'] .path-card__icon { color: #fff; }
+[data-view='original'] .path-card[data-original='teal'] .path-card__title { font-size: 2.7rem; }
+[data-view='original'] .path-card[data-original='teal'] .path-card__desc { color: rgba(255, 255, 255, 0.8); }
+[data-view='original'] .path-card[data-original='outline'] article { background: #f0f4f5; border: 1.5px solid var(--teal-700); border-left-width: 5px; border-radius: 44px; box-shadow: none; }
+[data-view='original'] .path-card[data-original='dark'] article { background: var(--dark); color: #fff; border-radius: 44px; min-height: 260px; }
+[data-view='original'] .path-card[data-original='dark'] .path-card__icon { color: #fff; }
+[data-view='original'] .path-card[data-original='dark'] .path-card__desc { color: rgba(255, 255, 255, 0.8); }
+[data-view='original'] .path-card article:hover { transform: none; box-shadow: inherit; border-color: inherit; }
+
+@media (min-width: 900px) {
+  [data-view='original'] .path-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  [data-view='original'] .path-card { grid-column: span 4; }
+  [data-view='original'] .path-card[data-n='2'] { grid-column: span 3; }
+  [data-view='original'] .path-card[data-n='3'] { grid-column: span 5; }
+  [data-view='original'] .path-card[data-n='4'] { grid-column: span 8; }
+  [data-view='original'] .path-card[data-n='9'] { grid-column: span 6; }
+  [data-view='original'] .path-card[data-n='10'],
+  [data-view='original'] .path-card[data-n='11'] { grid-column: span 3; }
+  [data-view='original'] .path-card[data-n='15'] { grid-column: span 7; }
+  [data-view='original'] .path-card[data-n='16'] { grid-column: span 5; }
+}
+
+/* --- Our Story: faint year, unlabelled bar and pills --- */
+[data-view='original'] .timeline { padding-left: 0; }
+[data-view='original'] .timeline__track,
+[data-view='original'] .ms::before { display: none; }
+[data-view='original'] .ms-card { gap: 20px; padding: 36px 56px 36px 56px; border: 3px solid #eef2f2; border-radius: 64px; background: transparent; box-shadow: none; }
+[data-view='original'] .ms-card::before { display: none; }
+[data-view='original'] .ms[data-state='current'] .ms-card { box-shadow: none; border-color: #eef2f2; }
+[data-view='original'] .ms-icon { width: 60px; height: 60px; border-radius: 50%; background: #e2ecec; color: var(--teal-900); box-shadow: none; }
+[data-view='original'] .ms-year { align-self: center; font-size: 3rem; font-style: italic; font-weight: 700; letter-spacing: -0.04em; color: #e6ebeb; }
+[data-view='original'] .ms-card__top { align-items: center; }
+[data-view='original'] .rail { display: block; height: 5px; border-radius: 5px; background: linear-gradient(90deg, var(--teal-900) 40%, var(--track) 40%); }
+[data-view='original'] .rail > * { display: none; }
+[data-view='original'] .ms-card__label { order: 3; font-size: 0.7rem; letter-spacing: 0.1em; margin-top: -6px; }
+[data-view='original'] .pills { order: 4; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+[data-view='original'] .pill { height: 40px; border-radius: 999px; background: #eceff0; }
+[data-view='original'] .pill[data-on='true'] { background: #c6dbdd; }
+[data-view='original'] .ms-extras { display: none; }
+[data-view='original'] .ms-title { font-size: clamp(2.2rem, 4.4vw, 3.4rem); }
+[data-view='original'] .ms-body { color: var(--ink-3); }

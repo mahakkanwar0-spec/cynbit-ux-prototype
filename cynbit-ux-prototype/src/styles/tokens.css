@@ -1,0 +1,35 @@
+/* Brand tokens. Colours were sampled from the screenshots supplied with the assessment. */
+:root {
+  --bg: #f7fafa;
+  --surface: #ffffff;
+  --surface-2: #f1f4f4;
+  --surface-3: #ebeeee;
+  --surface-4: #e0e3e3;
+  --track: #dfebeb;
+  --pill-on: #c6dbdd;
+  --line: #d3dcdc;
+
+  --teal-900: #006067;
+  --teal-700: #007b83;
+  --teal-100: #dfebeb;
+  --ink: #181c1d;
+  --ink-2: #4a5557;
+  --ink-3: #5f6b6d;
+  --dark: #2d3131;
+  --brown: #774e00;
+  --brown-100: #f3e6cf;
+
+  --font: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --shadow-sm: 0 1px 2px rgba(24, 28, 29, 0.06), 0 4px 12px rgba(24, 28, 29, 0.05);
+  --shadow-md: 0 2px 4px rgba(24, 28, 29, 0.06), 0 12px 28px rgba(24, 28, 29, 0.09);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --header-h: 72px;
+  --crumb-h: 44px;
+  --bar-h: 72px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1240px;
+}

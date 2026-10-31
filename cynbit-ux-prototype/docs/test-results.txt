@@ -1,0 +1,166 @@
+Routes, console errors, links
+  ok   GET / -> 200
+  ok   / in-page anchors resolve
+  ok   / has exactly one h1
+  ok   GET /bitelevate -> 200
+  ok   /bitelevate in-page anchors resolve
+  ok   /bitelevate has exactly one h1
+  ok   GET /bitelevate/paths -> 200
+  ok   /bitelevate/paths in-page anchors resolve
+  ok   /bitelevate/paths has exactly one h1
+  ok   GET /blog -> 200
+  ok   /blog in-page anchors resolve
+  ok   /blog has exactly one h1
+  ok   GET /careers -> 200
+  ok   /careers in-page anchors resolve
+  ok   /careers has exactly one h1
+  ok   GET /case-studies -> 200
+  ok   /case-studies in-page anchors resolve
+  ok   /case-studies has exactly one h1
+  ok   GET /compare -> 200
+  ok   /compare in-page anchors resolve
+  ok   /compare has exactly one h1
+  ok   GET /contact -> 200
+  ok   /contact in-page anchors resolve
+  ok   /contact has exactly one h1
+  ok   GET /cookies -> 200
+  ok   /cookies in-page anchors resolve
+  ok   /cookies has exactly one h1
+  ok   GET /diaries -> 200
+  ok   /diaries in-page anchors resolve
+  ok   /diaries has exactly one h1
+  ok   GET /impact -> 200
+  ok   /impact in-page anchors resolve
+  ok   /impact has exactly one h1
+  ok   GET /navigation -> 200
+  ok   /navigation in-page anchors resolve
+  ok   /navigation has exactly one h1
+  ok   GET /privacy -> 200
+  ok   /privacy in-page anchors resolve
+  ok   /privacy has exactly one h1
+  ok   GET /products -> 200
+  ok   /products in-page anchors resolve
+  ok   /products has exactly one h1
+  ok   GET /services -> 200
+  ok   /services in-page anchors resolve
+  ok   /services has exactly one h1
+  ok   GET /story -> 200
+  ok   /story in-page anchors resolve
+  ok   /story has exactly one h1
+  ok   GET /team -> 200
+  ok   /team in-page anchors resolve
+  ok   /team has exactly one h1
+  ok   GET /terms -> 200
+  ok   /terms in-page anchors resolve
+  ok   /terms has exactly one h1
+  ok   no JS errors on any page
+  ok   internal link / resolves
+  ok   internal link /story resolves
+  ok   internal link /team resolves
+  ok   internal link /careers resolves
+  ok   internal link /impact resolves
+  ok   internal link /services resolves
+  ok   internal link /products resolves
+  ok   internal link /case-studies resolves
+  ok   internal link /bitelevate resolves
+  ok   internal link /bitelevate/paths resolves
+  ok   internal link /diaries resolves
+  ok   internal link /blog resolves
+  ok   internal link /contact resolves
+  ok   internal link /compare resolves
+  ok   internal link /privacy resolves
+  ok   internal link /terms resolves
+  ok   internal link /cookies resolves
+  ok   internal link /navigation resolves
+Active navigation + breadcrumbs
+  ok   /story: "Company" trigger is highlighted
+  ok   /story: only "Our Story" is current in menus
+  ok   /story: breadcrumb Home > Company > Our Story
+  ok   /team: "Company" trigger is highlighted
+  ok   /team: only "Our Team" is current in menus
+  ok   /team: breadcrumb Home > Company > Our Team
+  ok   /bitelevate/paths: "BitElevate" trigger is highlighted
+  ok   /bitelevate/paths: only "Learning Paths" is current in menus
+  ok   /bitelevate/paths: breadcrumb Home > BitElevate > Learning Paths
+  ok   /bitelevate: "BitElevate" trigger is highlighted
+  ok   /bitelevate: only "The Ecosystem" is current in menus
+  ok   /bitelevate: breadcrumb Home > BitElevate > The Ecosystem
+  ok   /services: "Expertise" trigger is highlighted
+  ok   /services: only "Services Hub" is current in menus
+  ok   /services: breadcrumb Home > Expertise > Services Hub
+  ok   /blog: "Blog" link is current
+  ok   /contact: "Contact" link is current
+  ok   /: no menu item is marked active
+  ok   after scrolling: header stays pinned at top
+  ok   after scrolling: active trigger visible
+  ok   after scrolling: breadcrumb visible
+  ok   dropdown opens on click
+  ok   Esc closes dropdown
+  ok   after selecting Our Team: Company stays highlighted
+  ok   reopened dropdown marks the current page
+  ok   outside click closes dropdown
+Learning path cards
+  ok   1440px: 16 cards
+  ok   1440px: all cards same width
+  ok   1440px: all cards same height
+  ok   1440px: 4 column(s)
+  ok   1440px: consistent gaps (within 1px rounding)
+  ok   1440px: no horizontal scroll
+  ok   1440px: tags align across each row
+  ok   1024px: 16 cards
+  ok   1024px: all cards same width
+  ok   1024px: all cards same height
+  ok   1024px: 2 column(s)
+  ok   1024px: consistent gaps (within 1px rounding)
+  ok   1024px: no horizontal scroll
+  ok   768px: 16 cards
+  ok   768px: all cards same width
+  ok   768px: all cards same height
+  ok   768px: 2 column(s)
+  ok   768px: consistent gaps (within 1px rounding)
+  ok   768px: no horizontal scroll
+  ok   390px: 16 cards
+  ok   390px: all cards same width
+  ok   390px: all cards same height
+  ok   390px: 1 column(s)
+  ok   390px: consistent gaps (within 1px rounding)
+  ok   390px: no horizontal scroll
+  ok   original reconstruction: card heights are uneven (baseline for comparison)
+Our Story timeline
+  ok   improved year is larger than original
+  ok   improved year contrast vs page bg >= 4.5:1
+  ok   original year contrast is below 3:1 (baseline)
+  ok   4 milestones, 4 rail steps each
+  ok   milestone cards carry labelled content (chips or stats)
+  ok   scroll sets done/current/todo states
+  ok   spine fill follows scroll
+Mobile navigation
+  ok   desktop nav hidden on mobile
+  ok   bottom bar visible
+  ok   mobile menu closed initially
+  ok   menu toggle opens menu
+  ok   Company group is expanded and current item marked
+  ok   Esc closes mobile menu
+  ok   breadcrumb visible on mobile
+  ok   bottom bar marks BitElevate on /bitelevate
+  ok   bottom bar marks BitElevate on /bitelevate/paths
+  ok   390px /: no horizontal scroll
+  ok   390px /story: no horizontal scroll
+  ok   390px /team: no horizontal scroll
+  ok   390px /bitelevate/paths: no horizontal scroll
+  ok   390px /compare: no horizontal scroll
+View switch and comparison page
+  ok   switch to original hides breadcrumb
+  ok   original: no highlighted menu trigger
+  ok   switch back restores breadcrumb
+  ok   compare frames render original and improved
+  ok   compare page switch updates both frames
+Accessibility basics
+  ok   html has lang
+  ok   skip link targets main
+  ok   nav landmarks are labelled
+  ok   first Tab stop is the skip link
+  ok   dropdown triggers expose aria-expanded
+  ok   images/svgs decorative or labelled
+
+157 passed, 0 failed

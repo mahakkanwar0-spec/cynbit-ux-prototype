@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# misc
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# deployment
+.vercel/
+.netlify/
+
+# test output
+tests/output/

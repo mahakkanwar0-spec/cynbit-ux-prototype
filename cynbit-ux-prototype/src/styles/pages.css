@@ -1,0 +1,50 @@
+/* ---------- Page-level layout shared by the prototype pages ---------- */
+.page-hero { padding-block: clamp(36px, 7vw, 80px) 8px; }
+
+.changes { display: grid; gap: 16px; }
+@media (min-width: 800px) { .changes { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
+.change { display: flex; flex-direction: column; padding: 24px; border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow-sm); }
+.change__icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 16px; border-radius: 50%; background: var(--teal-100); color: var(--teal-900); }
+.change h3 { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em; }
+.change p { margin-top: 8px; color: var(--ink-2); }
+.change .text-link { margin-top: auto; padding-top: 14px; }
+
+.steps { counter-reset: step; display: grid; gap: 12px; max-width: 70ch; }
+.steps li { counter-increment: step; position: relative; padding: 14px 16px 14px 56px; border-radius: var(--radius-sm); background: var(--surface); box-shadow: var(--shadow-sm); color: var(--ink-2); }
+.steps li::before { content: counter(step); position: absolute; left: 14px; top: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--teal-900); color: #fff; font-weight: 800; font-size: 0.85rem; }
+.steps a { color: var(--teal-900); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+.cta__card { padding: clamp(28px, 5vw, 56px); border-radius: var(--radius-lg); background: var(--teal-900); color: #fff; }
+.cta__card h2 { font-size: clamp(1.6rem, 3.4vw, 2.4rem); font-weight: 800; letter-spacing: -0.03em; }
+.cta__card p { margin-top: 10px; color: rgba(255, 255, 255, 0.9); max-width: 52ch; }
+.cta__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.cta__card .btn--primary { background: #fff; color: var(--teal-900); box-shadow: none; }
+.cta__card .btn--primary:hover { background: var(--teal-100); }
+.cta__card .btn--ghost { border-color: #fff; color: #fff; }
+.cta__card .btn--ghost:hover { background: rgba(255, 255, 255, 0.14); }
+
+.scope-card { max-width: 720px; padding: clamp(24px, 4vw, 40px); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow-sm); }
+.scope-card p { color: var(--ink-2); }
+
+.leaders { display: grid; gap: 16px; }
+@media (min-width: 800px) { .leaders { grid-template-columns: repeat(3, 1fr); gap: 24px; } }
+.leader { padding: 28px; border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow-sm); }
+.leader__avatar { display: grid; place-items: center; width: 72px; height: 72px; margin-bottom: 18px; border-radius: 50%; background: var(--teal-900); color: #fff; font-weight: 800; font-size: 1.3rem; letter-spacing: 0.04em; }
+.leader h3 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; }
+.leader__role { margin: 2px 0 10px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-900); }
+.leader p:last-child { color: var(--ink-2); }
+
+/* Before / after page */
+.compare__controls { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0; }
+.seg { display: inline-flex; padding: 4px; border-radius: 999px; background: var(--surface-3); }
+.seg button { min-height: 40px; padding: 0 18px; border: 0; border-radius: 999px; background: transparent; font-weight: 700; font-size: 0.85rem; color: var(--ink-2); }
+.seg button[aria-pressed='true'] { background: var(--teal-900); color: #fff; }
+.compare__frames { --frame-w: 100%; display: grid; gap: 20px; }
+@media (min-width: 1100px) { .compare__frames { grid-template-columns: 1fr 1fr; } }
+.compare__frames figure { margin: 0; min-width: 0; }
+.compare__frames figcaption { margin-bottom: 10px; font-weight: 700; font-size: 0.9rem; color: var(--ink-2); }
+.compare__frames iframe { display: block; width: var(--frame-w); max-width: 100%; height: 720px; margin-inline: auto; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--bg); box-shadow: var(--shadow-sm); }
+.tag { display: inline-block; margin-right: 8px; padding: 3px 10px; border-radius: 999px; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 800; }
+.tag--before { background: var(--brown-100); color: var(--brown); }
+.tag--after { background: var(--teal-100); color: var(--teal-900); }
+.framed .view-switch { display: none; }

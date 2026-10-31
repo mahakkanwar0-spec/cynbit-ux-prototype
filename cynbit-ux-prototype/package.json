@@ -1,0 +1,21 @@
+{
+  "name": "cynbit-ux-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UX consistency and navigation enhancement prototype for cynbit.in (assessment submission). Independent prototype, not the production site.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node server.mjs",
+    "dev": "node scripts/build.mjs && node server.mjs",
+    "test": "node scripts/build.mjs && node tests/run-tests.mjs",
+    "screenshots": "node scripts/build.mjs && node scripts/capture-screenshots.mjs",
+    "report": "node scripts/build-report.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}

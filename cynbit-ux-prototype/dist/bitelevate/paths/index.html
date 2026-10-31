@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" data-view="improved">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learning Paths | Cynbit Technologies (prototype)</title>
+<meta name="description" content="Sixteen BitElevate learning paths in a consistent, responsive grid.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#006067">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script>(function(){var d=document.documentElement,v=null;d.classList.add('js');try{v=new URLSearchParams(location.search).get('view')}catch(e){}if(!v&&window.name.indexOf('cynbit-view-')===0){v=window.name.slice(12);d.classList.add('framed')}if(!v){try{v=localStorage.getItem('cynbit-view')}catch(e){}}if(location.pathname.indexOf('/compare')===0)v='improved';d.dataset.view=v==='original'?'original':'improved'})()</script>
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-site-header>
+  <div class="header__bar">
+    <a class="brand" href="/" aria-label="Cynbit — prototype overview"><svg class="logo" viewBox="0 0 150 44" width="150" height="44" role="img" aria-label="Cynbit">
+  <ellipse cx="75" cy="22" rx="70" ry="17" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="75" y="29" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="1" fill="currentColor">CYN·BIT</text>
+</svg></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <ul class="primary-nav__list">
+      <li class="nav-group" data-nav-group>
+        <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="menu-company">
+          <span>Company</span><svg class="icon nav-trigger__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-company">
+          <li><a class="nav-menu__link" href="/story">Our Story</a></li>
+          <li><a class="nav-menu__link" href="/team">Our Team</a></li>
+          <li><a class="nav-menu__link" href="/careers">Careers</a></li>
+          <li><a class="nav-menu__link" href="/impact">Social Impact</a></li>
+        </ul>
+      </li>
+      <li class="nav-group" data-nav-group>
+        <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="menu-expertise">
+          <span>Expertise</span><svg class="icon nav-trigger__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-expertise">
+          <li><a class="nav-menu__link" href="/services">Services Hub</a></li>
+          <li><a class="nav-menu__link" href="/products">Product Suite</a></li>
+          <li><a class="nav-menu__link" href="/case-studies">Case Studies</a></li>
+        </ul>
+      </li>
+      <li class="nav-group" data-nav-group data-active="true">
+        <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="menu-bitelevate">
+          <span>BitElevate</span><svg class="icon nav-trigger__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-bitelevate">
+          <li><a class="nav-menu__link" href="/bitelevate">The Ecosystem</a></li>
+          <li><a class="nav-menu__link" href="/bitelevate/paths" aria-current="page">Learning Paths</a></li>
+          <li><a class="nav-menu__link" href="/diaries">Student Diaries</a></li>
+        </ul>
+      </li>
+      <li><a class="nav-link" href="/blog">Blog</a></li>
+      <li><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary header__cta" href="/careers">Join Us</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-toggle>
+      <svg class="icon menu-toggle__open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon menu-toggle__close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+      <details class="m-group">
+        <summary>Company<svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul><li><a href="/story">Our Story</a></li><li><a href="/team">Our Team</a></li><li><a href="/careers">Careers</a></li><li><a href="/impact">Social Impact</a></li></ul>
+      </details>
+      <details class="m-group">
+        <summary>Expertise<svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul><li><a href="/services">Services Hub</a></li><li><a href="/products">Product Suite</a></li><li><a href="/case-studies">Case Studies</a></li></ul>
+      </details>
+      <details class="m-group" open data-active="true">
+        <summary>BitElevate<svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul><li><a href="/bitelevate">The Ecosystem</a></li><li><a href="/bitelevate/paths" aria-current="page">Learning Paths</a></li><li><a href="/diaries">Student Diaries</a></li></ul>
+      </details>
+      <div class="m-links"><a class="m-link" href="/blog">Blog</a><a class="m-link" href="/contact">Contact</a></div>
+      <a class="btn btn--primary btn--block" href="/careers">Join Us</a>
+    </div>
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><svg class="icon crumb-sep" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg><span class="crumb-group">BitElevate</span></li><li><svg class="icon crumb-sep" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg><span aria-current="page">Learning Paths</span></li></ol></nav>
+</header>
+<main id="main" tabindex="-1">
+<section class="page-hero container">
+  <p class="eyebrow">BitElevate · Learning paths</p>
+  <h1 class="display">Design your own career.</h1>
+  <p class="lead">16 learning paths across engineering, data and AI, design and growth. Every path is presented the same way so you can compare them at a glance.</p>
+</section>
+<section class="container section" aria-label="Learning paths">
+<ul class="path-grid" aria-label="Learning paths">
+  <li class="path-card" data-surface="white" data-original="white" data-source="proposed" data-n="1" data-category="engineering">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span>
+        <span class="path-card__index" aria-label="Path 1 of 16">01/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Engineering</span>
+        <h3 class="path-card__title">Full stack web development</h3>
+        <p class="path-card__desc">Front end, back end and everything between.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="grey" data-original="grey" data-source="proposed" data-n="2" data-category="growth">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10v4h3l7 4V6L6 10H3Z"/><path d="M16 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></svg></span>
+        <span class="path-card__index" aria-label="Path 2 of 16">02/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Growth</span>
+        <h3 class="path-card__title">Digital marketing</h3>
+        <p class="path-card__desc">Campaigns, search and measurable reach.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="brown" data-source="proposed" data-n="3" data-category="design">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4l6 6-8 8H6v-6l8-8Z"/><path d="M4 21h5"/></svg></span>
+        <span class="path-card__index" aria-label="Path 3 of 16">03/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Design</span>
+        <h3 class="path-card__title">UI/UX design</h3>
+        <p class="path-card__desc">Interfaces people understand at a glance.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="teal" data-original="teal" data-source="live" data-n="4" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></span>
+        <span class="path-card__index" aria-label="Path 4 of 16">04/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Artificial Intelligence (AI)</h3>
+        <p class="path-card__desc">Adaptive neural frameworks.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="outline" data-source="proposed" data-n="5" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></span>
+        <span class="path-card__index" aria-label="Path 5 of 16">05/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Machine learning (ML)</h3>
+        <p class="path-card__desc">Models that learn from data.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="grey" data-original="white" data-source="proposed" data-n="6" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg></span>
+        <span class="path-card__index" aria-label="Path 6 of 16">06/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Data science</h3>
+        <p class="path-card__desc">Turning raw data into decisions.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="grey" data-source="proposed" data-n="7" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="6" width="4" height="14" rx="1"/><rect x="16" y="9" width="4" height="11" rx="1"/></svg></span>
+        <span class="path-card__index" aria-label="Path 7 of 16">07/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Data analytics</h3>
+        <p class="path-card__desc">Dashboards, metrics and insight.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="dark" data-original="dark" data-source="live" data-n="8" data-category="engineering">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 10 3 2-3 2M12 15h5"/></svg></span>
+        <span class="path-card__index" aria-label="Path 8 of 16">08/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Engineering</span>
+        <h3 class="path-card__title">DevOps</h3>
+        <p class="path-card__desc">Continuous integration. Zero friction.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="white" data-source="live" data-n="9" data-category="engineering">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9.5 4.5 4.5 0 0 1 17.5 18H7Z"/></svg></span>
+        <span class="path-card__index" aria-label="Path 9 of 16">09/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Engineering</span>
+        <h3 class="path-card__title">Cloud computing</h3>
+        <p class="path-card__desc">AWS / Azure / GCP</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="grey" data-original="grey" data-source="proposed" data-n="10" data-category="engineering">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span class="path-card__index" aria-label="Path 10 of 16">10/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Engineering</span>
+        <h3 class="path-card__title">Cybersecurity</h3>
+        <p class="path-card__desc">Defend systems before they are tested.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="brown" data-source="proposed" data-n="11" data-category="engineering">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="8" y="13" width="8" height="8" rx="1"/></svg></span>
+        <span class="path-card__index" aria-label="Path 11 of 16">11/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Engineering</span>
+        <h3 class="path-card__title">Blockchain development</h3>
+        <p class="path-card__desc">Decentralised applications and ledgers.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="grey" data-original="teal" data-source="live" data-n="12" data-category="engineering">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="2"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M4.9 4.9a10 10 0 0 0 0 14.2M19.1 4.9a10 10 0 0 1 0 14.2"/></svg></span>
+        <span class="path-card__index" aria-label="Path 12 of 16">12/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Engineering</span>
+        <h3 class="path-card__title">Internet of things</h3>
+        <p class="path-card__desc">Connected edge</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="outline" data-source="proposed" data-n="13" data-category="growth">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.9 7.6-3.8M8.2 13.1l7.6 3.8"/></svg></span>
+        <span class="path-card__index" aria-label="Path 13 of 16">13/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Growth</span>
+        <h3 class="path-card__title">Social media management</h3>
+        <p class="path-card__desc">Voice, community and consistent presence.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="grey" data-original="white" data-source="proposed" data-n="14" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="m7 6.5 3.2 4M7 17.5l3.2-4M14 12h3"/></svg></span>
+        <span class="path-card__index" aria-label="Path 14 of 16">14/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Deep learning</h3>
+        <p class="path-card__desc">Layered networks for complex patterns.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="white" data-original="grey" data-source="proposed" data-n="15" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h9M8.5 4v2M6 6c0 4 3 7 6 8M12 6c0 3-3 6-6.5 8"/><path d="m13 20 4-9 4 9M14.5 17h5"/></svg></span>
+        <span class="path-card__index" aria-label="Path 15 of 16">15/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Natural language processing (NLP)</h3>
+        <p class="path-card__desc">Software that reads and writes language.</p>
+      </div>
+    </article>
+  </li>
+  <li class="path-card" data-surface="grey" data-original="dark" data-source="proposed" data-n="16" data-category="data">
+    <article>
+      <div class="path-card__top">
+        <span class="path-card__icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7.5 11.5l2-2 1.5 1.5 2-2.5"/></svg></span>
+        <span class="path-card__index" aria-label="Path 16 of 16">16/16</span>
+      </div>
+      <div class="path-card__body">
+        <span class="path-card__tag">Data &amp; AI</span>
+        <h3 class="path-card__title">Business analytics</h3>
+        <p class="path-card__desc">Data framed around business questions.</p>
+      </div>
+    </article>
+  </li>
+</ul>
+</section>
+<section class="container section cta">
+  <div class="cta__card">
+    <h2>Ready to pick a path?</h2>
+    <p>Read how the BitElevate program works, or talk to the team.</p>
+    <div class="cta__actions">
+      <a class="btn btn--primary" href="/bitelevate">Explore the ecosystem</a>
+      <a class="btn btn--ghost" href="/contact">Speak to a mentor</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="/" aria-label="Cynbit — prototype overview"><svg class="logo" viewBox="0 0 150 44" width="150" height="44" role="img" aria-label="Cynbit">
+  <ellipse cx="75" cy="22" rx="70" ry="17" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="75" y="29" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" letter-spacing="1" fill="currentColor">CYN·BIT</text>
+</svg></a>
+      <p>Assessment prototype. This is an independent UX study of www.cynbit.in, not the production site.</p>
+    </div>
+    <div class="footer__col">
+        <h2 class="footer__title">Explore</h2>
+        <ul><li><a href="/story">About Us</a></li><li><a href="/team">Core Team</a></li><li><a href="/services">Our Services</a></li><li><a href="/products">Product Suite</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">Impact</h2>
+        <ul><li><a href="/impact">Social Initiatives</a></li><li><a href="/blog">Expert Blog</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/contact">Contact Support</a></li></ul>
+      </div>
+  </div>
+  <div class="container footer__legal">
+    <p>Prototype for the Full Stack Developer Intern assessment. Cynbit branding and copy belong to Cynbit Technologies.</p>
+    <nav aria-label="Legal"><a href="/terms">Terms</a><a href="/cookies">Cookies</a><a href="/navigation">Navigation</a></nav>
+  </div>
+</footer>
+<nav class="bottom-bar" aria-label="Quick navigation"><ul><li><a href="/"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4v-9Z"/></svg><span>Home</span></a></li><li><a href="/services"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></svg><span>Services</span></a></li><li><a href="/products"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7l8-4 8 4v10l-8 4-8-4V7Z"/><path d="m4 7 8 4 8-4M12 11v10"/></svg><span>Products</span></a></li><li><a href="/bitelevate" aria-current="page"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9l10-5 10 5-10 5L2 9Z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg><span>BitElevate</span></a></li><li><a href="/contact"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></a></li></ul></nav>
+<div class="view-switch" role="group" aria-label="Prototype view">
+  <span class="view-switch__label">View</span>
+  <button type="button" data-view-btn="improved" aria-pressed="true">Improved</button>
+  <button type="button" data-view-btn="original" aria-pressed="false">Original <small>(reconstruction)</small></button>
+</div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
