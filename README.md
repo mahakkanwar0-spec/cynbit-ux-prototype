@@ -4,7 +4,6 @@ An independent prototype for the Cynbit Technologies Full Stack Developer Intern
 
 | Problem on the existing site | Improvement |
 |---|---|
-| Learning-path cards have uneven sizes and spacing | 16 cards, one size, one internal structure, 4 / 2 / 1 column grid |
 | Our Story left cards look dull; year barely visible | Large high-contrast year, filled icon, labelled 4-step rail, chips/stats, scroll-linked spine |
 | No active-page indication, no orientation | `aria-current` active state on menu, dropdown, mobile bottom bar and footer; breadcrumb in the sticky header |
 
